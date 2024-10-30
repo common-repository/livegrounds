@@ -1,0 +1,51 @@
+#lg_sign 
+{  
+	position: absolute;
+	filter:alpha(opacity=95);
+}
+
+#lg_scene {
+	position: absolute;
+	z-index: 10;
+}
+
+#fix_container {
+	position: absolute;
+}
+
+
+@media screen
+{
+	#lg_sign {
+		position: fixed;
+	}
+	
+	#lg_scene {
+		position: fixed;
+	}
+	
+	#fix_container {
+		position: fixed;
+	}
+
+	* html {
+		overflow-y: hidden;
+	}
+
+	* html body {
+		overflow-y: auto;
+		height: 100%;
+	}
+
+	* html #lg_sign {
+		position: absolute;  
+	}
+	
+	* html #lg_scene {
+		position: absolute;  
+	}
+	
+	* html #fix_container {
+		position: absolute;
+	}
+}
